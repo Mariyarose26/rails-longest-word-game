@@ -1,4 +1,4 @@
-<p><b>Your Score is:</b></p>
-<%= @outcome[:score] %>
-<%= @outcome[:message] %>
-<%= link_to "Play Again", new_path %>
+<p><b>Your Score is: </b><%= @outcome[:score] %></p>
+<p>Your attempt: <b><%= @attempt %></b> is <%= @outcome[:message] %></p>
+<br>
+<%= link_to "Play Again", root_path, class: "btn btn-ghost" %>
